@@ -1,0 +1,19 @@
+---
+title: Home
+---
+
+<h2>LUCA WELLMEIER</h2>
+
+
+\[ \oint_\gamma f(z) dz = 0 \]
+
+\[ \oint_\gamma f(z) dz = 0 \]
+
+<ul>
+  	{% for category in site.categories %}
+    <li>
+		<h3><a href="{{category.url}}">{{ category.name }}</a></h3>
+		<p>{{ author.content | markdownify }}</p>
+    </li>
+  	{% endfor %}
+</ul>

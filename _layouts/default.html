@@ -2,13 +2,26 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>{{page.title}}</title>
-		<link rel="stylesheet" href="/assets/css/styles.css">
+		<title>{{page.title}} | Luca Wellmeier</title>
+		<link rel="stylesheet" href="/assets/css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		{% include mathjax.html %}
 	</head>
 	<body>
-		{% include navigation.html %}
-		{{ content }}
+		<header>
+			<h1><code>luca wellmeier</code></h1>
+			<nav>
+				{% include navigation.html %}
+			</nav>
+		</header>
+		<main>
+			<aside>
+				{% include sidebar.html %}
+			</aside>
+			<article>
+				{{ content }}
+			</article>
+		</main>
 	</body>
 </html>

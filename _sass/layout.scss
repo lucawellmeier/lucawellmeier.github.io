@@ -1,0 +1,57 @@
+body {
+	width: 100%;
+}
+
+header {
+	position: static;
+	top: 0;
+	border-bottom: 1px solid black;
+	padding: 0 8px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+
+	h1 {
+		margin: 10px 0;
+		font-family: 2rem;
+		font-family: monospace;
+	}
+
+	nav {
+		a {
+			font-size: 1.3rem;
+			font-family: monospace;
+		}
+	}
+}
+
+main {
+	width: 100%;
+	position: absolute;
+	top: 60px;
+	display: flex;
+	flex-direction: column-reverse;
+
+	aside {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		
+		section {
+			margin: 5px;
+		}
+		img {
+			margin: 5px;
+			width: 150px;
+			height: 150px;
+			border-radius: 100%;
+		}
+	}
+	article {
+		border-bottom: 1px solid grey;
+		margin-bottom: 10px;
+	}
+}

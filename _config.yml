@@ -2,15 +2,22 @@ markdown: kramdown
 mathjax: true
 
 collections:
+    categories:
+        output: true
     authors:
         output: true
 
 defaults:
     - scope:
         path: ""
+        type: "categories"
+      values:
+        layout: category
+    - scope:
+        path: ""
         type: "authors"
       values:
-        layout: author
+        layout: category
     - scope:
         path: ""
         type: "posts"
