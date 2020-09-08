@@ -1,27 +1,35 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset="utf-8">
 		<title>{{page.title}} | Luca Wellmeier</title>
-		<link rel="stylesheet" href="/assets/css/main.css">
+
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		{% include mathjax.html %}
+		<link rel="stylesheet" href="/assets/style.css">
+		<script type="text/javascript" src="/assets/functions.js"></script>
+		<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 	</head>
 	<body>
 		<header>
-			<h1><code>luca wellmeier</code></h1>
-			<nav>
-				{% include navigation.html %}
-			</nav>
+			<h1>luca wellmeier</h1>
+			<div class="menu-icon" onclick="toggleMenu()">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</header>
-		<main>
-			<aside>
-				{% include sidebar.html %}
-			</aside>
-			<article>
-				{{ content }}
-			</article>
-		</main>
+		<nav>
+			{% for item in site.data.navigation %}
+			<a href="{{ item.link }}" 
+					{% if page.url == item.link %}class="active-menu-item"{% endif %}>
+				{{ item.name }}
+			</a>
+			{% endfor %}
+		</nav>
+		<hr>
+		<article>
+			{{ content }}
+		</article>
 	</body>
 </html>
