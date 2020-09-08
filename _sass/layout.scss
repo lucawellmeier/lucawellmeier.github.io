@@ -98,12 +98,12 @@ header {
 }
 
 article {
-	padding: $base-padding;
 	@include container;
 }
 
 footer {
 	@include container;
+	padding: $base-padding;
 
 	.encrypted-mail::after {
 		content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
