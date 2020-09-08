@@ -3,6 +3,9 @@ function toggleMenu() {
 	menu.classList.toggle('menu-xs-hide');
 }
 
+function insertEmail() {
+}
+
 window.onload = function() {
 	toggleMenu();
 }
