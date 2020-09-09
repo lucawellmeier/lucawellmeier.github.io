@@ -5,15 +5,10 @@ title: Home
 <h2>LUCA WELLMEIER</h2>
 
 
-\[ \oint_\gamma f(z) dz = 0 \]
+$$ \oint_\gamma f(z) dz = 0 $$
 
-\[ \oint_\gamma f(z) dz = 0 \]
+Let $(x_n)_{n \in \mathbb{N}} \subset \mathbb{R}$ be a sequence. We call it convergent towards 
+$x \in \mathbb{R}$ if there is a number $n \in \mathbb{N}$ for each $\epsilon > 0$, such that
 
-<ul>
-  	{% for category in site.categories %}
-    <li>
-		<h3><a href="{{category.url}}">{{ category.name }}</a></h3>
-		<p>{{ author.content | markdownify }}</p>
-    </li>
-  	{% endfor %}
-</ul>
+$$|x_n - x| < \epsilon.$$
+	

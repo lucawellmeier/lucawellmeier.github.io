@@ -1,5 +1,6 @@
 markdown: kramdown
-mathjax: true
+kramdown:
+    toc_levels: 2..5
 
 collections:
     categories:
