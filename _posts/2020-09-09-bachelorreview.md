@@ -191,7 +191,7 @@ Linear Algebra 1 ([Prof. Michael Spieß][spiess]) and Linear Algeba for Physicis
 [Prof. Baake][baake].
 
 I wrote my Bachelor thesis supervised by [Prof. Baake][baake] and [Prof. Voll][voll]
-in analytic combinatorics. More details on my thesis **[here (NOT YET PUBLISHED)]()**
+in analytic combinatorics. More details on my thesis **[here (NOT YET PUBLISHED, COMING SOON)]()**
 
 - **regular seminar of the [working group Baake][baake]**
 	- tilings
@@ -220,6 +220,7 @@ For comparison under the math
 graduates of the last 3 years at Bielefeld university this grade belongs to the top ~39%. 
 An okey grade, I think.
 
+CONCLUSION COMING SOON
 
 
 
